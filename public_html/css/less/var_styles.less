@@ -18,3 +18,43 @@ h1, h2 {
 #mypara:after {
     content: @myStringVar;
 }
+
+// LESS Mixins
+.commonTraits {
+    border-radius: 10px;
+    border: 1px solid green;
+    padding: 10px;
+}
+
+header {
+    color: #274D87;
+    .commonTraits;
+}
+
+footer {
+    color: #3264AF;
+    .commonTraits;
+}
+
+// LESS Nested rules
+body {
+    font-family: Helvetica, Arial, sans-serif;
+    
+    p {
+        font-family:Times;
+    }
+    p#mypara {
+        font-family: "Courier New";
+    }
+}
+
+#mypara {
+    color: #404040;
+    border: 1px solid #404040;
+    padding: 10px;
+    
+    // refer to the parent of the rule currently being defined
+    &:hover {
+        color: red;
+    }
+}
