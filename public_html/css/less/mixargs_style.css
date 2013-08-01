@@ -3,5 +3,10 @@
   -webkit-border-radius: 5px;
   -ms-border-radius: 5px;
   border-radius: 5px;
-  border: 1px solid black;
+  border: 5px solid #0000ff;
+  -webkit-box-shadow: 10px 10px 10px #808080;
+  -mox-box-shadow: 10px 10px 10px #808080;
+  -ms-box-shadow: 10px 10px 10px #808080;
+  box-shadow: 10px 10px 10px #808080;
+  padding: 10px;
 }
