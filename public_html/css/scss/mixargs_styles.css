@@ -1,0 +1,5 @@
+#mypara {
+  /* @include customBorder(3px, blue, dotted); */
+  border-width: 1px;
+  border-color: black;
+  border-style: dotted; }
