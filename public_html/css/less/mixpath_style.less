@@ -1,0 +1,50 @@
+.alert(warning) {
+    @color: goldenrod;
+    color: @color;
+    border-color: darken(@color, 10%);
+    .at-text3d; 
+}
+.alert(error) {
+    @color: red;
+    color: lighten(@color, 10%);
+    border-color: darken(@color, 20%);
+    .at-text3d; 
+}
+.alert(other, @color) {
+    color: lighten(@color, 10%);
+    border-color: darken(@color, 20%);
+}
+
+/* sumulates .alert(@_)  */
+.at-text3d {
+    display: block;
+    border-width: 2px;
+    border-style:solid;
+    padding: 10px;
+}
+
+/* @_ does not work in less plugin for NetBeans
+.alert(@_) {
+    display: block;
+    border-width: 2px;
+    border-style:solid;
+    padding: 10px;
+}
+*/
+
+/* match two arguments */
+/*
+.alert(@_, @_) {
+    display: block;
+    border-width: 2px;
+    border-style:solid;
+    padding: 10px;
+}
+*/
+
+/* @type: warning; */
+@type: error;
+#mypara {
+    .alert(@type);
+	/* .alert(other,green); */
+}

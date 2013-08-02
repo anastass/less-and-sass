@@ -1,0 +1,36 @@
+/* sumulates .alert(@_)  */
+/* sumulates .alert(@_)  */
+.at-text3d {
+  display: block;
+  border-width: 2px;
+  border-style: solid;
+  padding: 10px;
+}
+/* @_ does not work in less plugin for NetBeans
+.alert(@_) {
+    display: block;
+    border-width: 2px;
+    border-style:solid;
+    padding: 10px;
+}
+*/
+/* match two arguments */
+/*
+.alert(@_, @_) {
+    display: block;
+    border-width: 2px;
+    border-style:solid;
+    padding: 10px;
+}
+*/
+/* @type: warning; */
+#mypara {
+  color: #ff3333;
+  border-color: #990000;
+  display: block;
+  border-width: 2px;
+  border-style: solid;
+  padding: 10px;
+  /* .alert(other,green); */
+
+}
